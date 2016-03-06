@@ -1,0 +1,14 @@
+[user]
+  email = mathieu.pousse@zenika.com
+  name = Mathieu POUSSE
+[alias]
+unstage = reset HEAD --
+last = log -1 HEAD
+co = checkout
+st = status
+ci = commit
+glog = log --oneline --graph --decorate
+gloga = log --oneline --graph --decorate --all
+
+[credential]
+  helper = store
