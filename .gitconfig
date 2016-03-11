@@ -13,6 +13,12 @@
   ours = "!f() { git co --ours $@ && git add $@; }; f"
   theirs = "!f() { git co --theirs $@ && git add $@; }; f"
   show-files = show --pretty="format:" --name-only
-
 [credential]
   helper = store
+[push]
+        default = simple
+[core]
+        autocrlf = input
+[pull]
+        rebase = true
+        
