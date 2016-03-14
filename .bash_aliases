@@ -1,4 +1,11 @@
 
+# Configure bash history
+# Add date
+export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
+# Append asap for use in multiple terminals
+export PROMPT_COMMAND='history -a'
+
+
 #  Customize BASH PS1 prompt to show current GIT repository and branch.
 #  by Mike Stewart - http://MediaDoneRight.com
 
