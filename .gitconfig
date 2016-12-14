@@ -7,8 +7,8 @@
   co = checkout
   st = status
   ci = commit
-  glog = log --oneline --graph --decorate
-  gloga = log --oneline --graph --decorate --all
+  glog = log --color --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  gloga = log --color --graph --pretty=format:'%C(red)%h%Creset -%C(yellow)%d%Creset %s %C(green)(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
   filelog = log -u
   ours = "!f() { git co --ours $@ && git add $@; }; f"
   theirs = "!f() { git co --theirs $@ && git add $@; }; f"
@@ -21,4 +21,10 @@
         autocrlf = input
 [pull]
         rebase = true
+[rebase]
+        autoStash = true
+[rerere]
+        enabled=true
+
+
         
