@@ -37,7 +37,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
-bindsym Print exec scrot -s /tmp/screenshot.png && xclip /tmp/screenshot.png && rm /tmp/screenshot.png
+bindsym --release  Print exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
 
 bindsym $mod+Control+Left move workspace to output left
 bindsym $mod+Control+Right move workspace to output right
