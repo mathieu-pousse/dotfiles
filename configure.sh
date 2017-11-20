@@ -10,6 +10,8 @@ function bind() {
 sudo apt install git git-extras
 bind ".gitconfig"
 
+curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark -O $HOME/.dircolors.ansi-dark
+
 # install zsh
 sudo apt install zsh fonts-powerline
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
