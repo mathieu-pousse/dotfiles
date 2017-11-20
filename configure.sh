@@ -10,6 +10,15 @@ function bind() {
 sudo apt install git git-extras
 bind ".gitconfig"
 
+# configure vim
+sudo apt-get install vim-gui-common
+mkdir -p $HOME/.vimrc/colors
+curl https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -o $HOME/.vimrc/colors/solarized.vim
+bind ".vimrc"
+
+# let's add style!
+git clone --depth=1 https://github.com/ryanoasis/nerd-fonts /tmp && /tmp/nerd-fonts/install.sh
+
 curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark -O $HOME/.dircolors.ansi-dark
 
 # install zsh
