@@ -6,6 +6,10 @@ function bind() {
   ln -nfs $DOTFILES_ROOT/$1 $HOME/$1
 }
 
+# install i3
+sudo apt install i3
+bind ".config/i3"
+
 # install git
 sudo apt install git git-extras
 bind ".gitconfig"
