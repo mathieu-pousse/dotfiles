@@ -1,16 +1,10 @@
-# my-env
-keep track of my bash configuratiuon
+# dotfiles
 
-# checkout 
+keep track of my configurations
 
-    # init a repo
-    git init
-    # plug it to github
-    git remote add origin https://github.com/mathieu-pousse/my-env.git
-    # retrieve everything
-    git fetch
-    # checkout master
-    git checkout -t origin/master
-    # remove git information
-    rm -rf .git
+# install 
+
+    mkdir -p $HOME/projects 
+    git clone https://github.com/mathieu-pousse/dotfiles.git $HOME/projects/dotfiles
+    $HOME/projects/dotfiles/configure.sh
 
