@@ -2,6 +2,12 @@
 
 export ZSH=$HOME/.oh-my-zsh
 
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Reloads the history whenever you use it
+setopt share_history
+setopt hist_reduce_blanks
+
 eval `dircolors $HOME/.dircolors.ansi-dark`
 
 ZSH_THEME=powerlevel9k/powerlevel9k
