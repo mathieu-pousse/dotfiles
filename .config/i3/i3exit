@@ -1,6 +1,13 @@
 #!/bin/sh
+revert() {
+    xset dpms 0 0 0
+}
+
 lock() {
-    i3lock -c 314151 -d -f -b -I 5
+    trap revert HUP INT TERM
+    xset +dpms dpms force off
+    i3lock -n -c 000000
+    revert
 }
 
 case "$1" in
