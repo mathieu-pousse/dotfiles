@@ -6,6 +6,9 @@ function bind() {
   ln -nfs $DOTFILES_ROOT/$1 $HOME/$1
 }
 
+# tune timezone
+sudo cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
+
 # install i3
 sudo apt install i3
 bind ".config/i3"
