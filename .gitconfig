@@ -2,6 +2,7 @@
   email = m.mathieu.pousse@gmail.com
   name = Mathieu POUSSE
 [alias]
+  amend = commit --amend --no-edit
   pushf = push --force-with-lease
   unstage = reset HEAD --
   last = log -1 HEAD
